@@ -1,0 +1,6 @@
+*.xml
+*.zip
+*.feather
+.localized
+.DS_Store
+
