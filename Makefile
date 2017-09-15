@@ -1,7 +1,8 @@
 # location of the exported xml-file.
 EXPORT=export.xml
 TARGETS=Record Stand Workout ActivitySummary
-RES=$(addprefix res/, $(addsuffix .feather, $(TARGETS)))
+TDIR=res/
+RES=$(addprefix $(TDIR), $(addsuffix .feather, $(TARGETS)))
 
 .PHONY : print_fields
 print_fields : fields.sh $(EXPORT)
@@ -11,7 +12,8 @@ print_fields : fields.sh $(EXPORT)
 print_datasets : datasets.sh $(EXPORT)
 	./$< $(EXPORT)
 
-res/%.feather : proc.sh scripts/%.sh R/%.R $(EXPORT)
+$(TDIR)%.feather : proc.sh scripts/%.sh R/%.R $(EXPORT)
+	mkdir -p $(TDIR)
 	./$< $(@F) $(EXPORT)
 
 .PHONY : all
