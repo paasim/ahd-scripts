@@ -1,6 +1,8 @@
 *.xml
 *.zip
 *.feather
+*.swp
+*.out
 .localized
 .DS_Store
-
+.Rproj.user
