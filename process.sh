@@ -1,4 +1,4 @@
-#! /usr/local/bin/bash
+#!/usr/bin/env bash
 
 echo "xml to line-oriented format and split it into multiple files..."
 mkdir -p xmls

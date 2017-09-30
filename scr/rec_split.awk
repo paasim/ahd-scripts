@@ -1,5 +1,3 @@
-#! /usr/local/bin/awk
-
 BEGIN {
   FS="/"
   n = 0
