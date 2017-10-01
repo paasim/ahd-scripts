@@ -1,10 +1,9 @@
 # Scripts for transforming Apple health data to tabular format
 
-The relevant data is first extracted from the xml-file and split into smaller chunks to save memory.
-Then the smaller chunks are passed to R which transforms the data into tibbles.
+The relevant data is first extracted from the xml-file and split into smaller chucks, which are to R which transforms the data into tibbles.
 
 ## Requirements
-`xml2`, `2xml`, `awk` in path (the shebang lines might need to be modified possibly).
+`xml2`, `2xml`, `awk` in path.
 `R` with relatively new versions of the libraries `tidyverse`, `stringr`, `lubridate`, `forcats`, `feather` and `xml2`.
 
 ## Usage
