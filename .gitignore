@@ -1,5 +1,6 @@
 *.xml
 *.zip
 *.swp
+*.txt
 .localized
 .DS_Store
