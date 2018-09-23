@@ -2,5 +2,6 @@
 *.zip
 *.swp
 *.txt
+*.csv
 .localized
 .DS_Store
